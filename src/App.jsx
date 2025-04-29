@@ -1,10 +1,13 @@
 import "./App.css";
-import Header from "./components/Header";
+
+import ProfileSection from "./components/ProfileSection";
+import SkillSection from "./components/SkillSection";
 
 function App() {
   return (
     <>
-      <Header />
+      <ProfileSection />
+      <SkillSection />
     </>
   );
 }

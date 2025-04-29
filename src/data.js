@@ -3,7 +3,7 @@ const data = {
     heroSection: {
       greeting: "Hi!",
       name: "Mustafa",
-      intro: `I'm ${name}I'm a full-stack developer.`,
+      intro: `I'm Mustafa. I'm a full-stack developer.`,
       description: "I can craft solid and scalable frontend products. Let's meet.",
       profileImage: "https://via.placeholder.com/150",
       social: [
@@ -21,15 +21,17 @@ const data = {
         },
       ],
     },
-    aboutSection: {
-      title: "About Me",
-      description: "I am a software engineer with a passion for building web applications.",
-      skills: [
-        { name: "JavaScript", level: "Expert" },
-        { name: "React", level: "Expert" },
-        { name: "Node.js", level: "Intermediate" },
-      ],
-    },
+    skillSection: [
+{name: "FİGMA", logo: "figma-log.jpg"},
+{name: "JAVASCRİPT", logo: "javaScript-logo.jpg"},
+{name: "REACT", logo: "react-logo.png"},
+{name: "NODEJS", logo: "nodejs-logo.jpg"},
+{name: "REDUX", logo: "redux-logo.png"},
+{name: "VS CODE", logo: "vStudio-logo.png"},
+
+    ],
+
+   
     projectsSection: {
       title: "Projects",
       projects: [
