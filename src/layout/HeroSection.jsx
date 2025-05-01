@@ -1,4 +1,6 @@
-const ProfileSection = () => {
+import React from "react";
+
+const HeroSection = () => {
   return (
     <div className="bg-[linear-gradient(to_right,_#4731D3_67%,_#CBF281_33%)] flex flex-col h-screen  items-center ">
       <div className="flex w-2/3 my-auto mx-auto">
@@ -38,4 +40,4 @@ const ProfileSection = () => {
   );
 };
 
-export default ProfileSection;
+export default HeroSection;

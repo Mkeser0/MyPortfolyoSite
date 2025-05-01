@@ -1,13 +1,15 @@
 import "./App.css";
 
-import ProfileSection from "./components/ProfileSection";
-import SkillSection from "./components/SkillSection";
+import HeroSection from "./layout/HeroSection";
+import ProfileSection from "./layout/ProfileSection";
+import SkillSection from "./layout/SkillSection";
 
 function App() {
   return (
     <>
-      <ProfileSection />
+      <HeroSection />
       <SkillSection />
+      <ProfileSection />
     </>
   );
 }
