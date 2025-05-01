@@ -9,7 +9,7 @@ function Skills() {
   const rightSkills = skillSection.slice(3, 6);
 
   return (
-    <div className="flex justify-between gap-28 items-center">
+    <div className="flex justify-between gap-28 items-center dark:bg-[#2B2727]">
       {/* Sol sütun */}
       <div className="flex flex-col space-y-8">
         {leftSkills.map((skill, i) => (
@@ -25,7 +25,7 @@ function Skills() {
       </div>
 
       {/* Sağ sütun */}
-      <div className="flex flex-col space-y-8">
+      <div className="flex flex-col space-y-8 dark:bg-[#2B2727]">
         {rightSkills.map((skill, i) => (
           <div className="flex items-center space-x-8" key={i}>
             <img

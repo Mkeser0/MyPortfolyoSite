@@ -3,7 +3,7 @@ import Skills from "../components/Skills";
 
 function SkillSection() {
   return (
-    <div className="flex justify-center items-center my-28">
+    <div className="flex justify-center items-center py-28 dark:bg-[#2B2727]">
       <div className="w-[960px] flex ">
         <h1 className="w-1/5 text-5xl font-bold text-[#4832D3] font-inter">
           Skills

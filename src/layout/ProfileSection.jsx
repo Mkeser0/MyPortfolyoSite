@@ -4,11 +4,12 @@ import AboutMe from "../components/AboutMe";
 
 function ProfileSection() {
   return (
-    <div className="bg-[#4731D3] py-24 flex justify-center items-center px-4">
+    <div className="bg-[#4731D3] dark:bg-[#171043] py-24 flex justify-center items-center px-4">
       <div className="flex flex-col w-full max-w-[960px]">
-        <h1 className="text-5xl text-[#CBF281] text-left mb-8">Profile</h1>
+        <h1 className="text-5xl text-[#CBF281] text-left mb-8 font-bold">
+          Profile
+        </h1>
 
-        {/* Mobilde dikey ortalı, büyük ekranda yatay hizalı */}
         <div className="flex flex-col md:flex-row gap-7 items-center md:items-start">
           <div className="flex-1 w-full">
             <h2 className="text-4xl text-[#FFFFFF] font-inter mb-4 text-center md:text-left">

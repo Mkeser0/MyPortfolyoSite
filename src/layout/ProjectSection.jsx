@@ -3,7 +3,7 @@ import Project from "../components/Project";
 
 function ProjectSection() {
   return (
-    <div className="bg-[#CBF281] ">
+    <div>
       <Project />
     </div>
   );

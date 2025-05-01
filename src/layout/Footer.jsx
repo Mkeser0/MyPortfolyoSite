@@ -8,7 +8,7 @@ import { faCodepen } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
-    <div className="flex flex-col items-center justify-center ">
+    <div className="flex flex-col items-center justify-center dark:bg-[#252128]">
       <div className="w-max h-[290px] flex flex-col items-center justify-center border-solid-2">
         <h1 className="text-4xl font-inter font-bold text-[#4731D3]">
           Send me a message!

@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 
 export default function useDarkMode() {
   const [darkMode, setDarkMode] = useState(() => {
-    // Sayfa açılırken localStorage'dan veriyi oku
     const storedMode = localStorage.getItem("darkMode");
-    return storedMode === "false"; // true/false olarak ayarla
+    return storedMode;
   });
 
   useEffect(() => {
@@ -13,7 +12,7 @@ export default function useDarkMode() {
     } else {
       document.documentElement.classList.remove("dark");
     }
-    // Her değişimde localStorage'ı güncelle
+
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
