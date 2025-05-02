@@ -1,10 +1,17 @@
 const data = {
   en:{
+    footer: {
+      title: "Send me a message!",
+      desc1: "Got a question or proposal?",
+      desc2: "Or just want to say hello? Go ahead.",
+    },
     heroSection: {
       greeting: "Hi!",
       name: "Mustafa",
-      intro: `I'm Mustafa. I'm a full-stack developer.`,
-      description: "I can craft solid and scalable frontend products. Let's meet.",
+      intro: `I'm Mustafa.`,
+      intro2: `I'm a full-stack developer.`,
+      description: "I can craft solid and scalable",
+      description2: "frontend products. Let's meet.",
       profileImage: "https://via.placeholder.com/150",
       social: [
         {
@@ -25,7 +32,7 @@ const data = {
       {name: "FİGMA", logo: "figma-log.jpg"},
       {name: "JAVASCRİPT", logo: "javaScript-logo.jpg"},
       {name: "REACT", logo: "react-logo.png"},
-      {name: "NODEJS", logo: "nodejs-logo.jpg"},
+      {name: "NODE", logo: "nodejs-logo.jpg"},
       {name: "REDUX", logo: "redux-logo.png"},
       {name: "VS CODE", logo: "vStudio-logo.png"},
 
@@ -46,11 +53,18 @@ const data = {
     ],    
   },
   tr: {
+    footer: {
+      title: "Bana bir mesaj gönder! ",
+      desc1: "Bir sorunuz mu var, bir teklifiniz mi var?",
+      desc2: "Ya da sadece merhaba mı demek istiyorsunuz? Çekinmeyin, yazın!",
+    },
     heroSection: {
       greeting: "Merhaba!",
       name: "Mustafa",
-      intro: `Ben Mustafa. Full-stack Web geliştiricisiyim.`,
-      description: "Sağlam ve ölçeklenebilir frontend ürünleri geliştirebilirim. Tanışalım.",
+      intro: `Ben Mustafa.`,
+      intro2: `Full-stack Web geliştiricisiyim.`,
+      description: "Sağlam ve ölçeklenebilir",
+      description2: "frontend ürünleri geliştirebilirim. Hadi tanışalım!",
       profileImage: "https://via.placeholder.com/150",
       social: [
         {

@@ -1,5 +1,4 @@
 import React from "react";
-
 import { NavLink } from "react-router-dom";
 import data from "../data";
 import { useSelector } from "react-redux";
@@ -22,7 +21,7 @@ function Project() {
             className="flex flex-col md:flex-row items-center bg-[#F9FAFB] dark:bg-[#2B2727] rounded-[12px] shadow-lg my-6 p-1 gap-6"
           >
             {/* Görsel */}
-            <div className="w-full md:w-1/2 flex justify-center items-center">
+            <div className="w-full sm:w-1/2 flex justify-center md:justify-start items-center">
               <img
                 className="w-full max-w-[360px] h-auto rounded-md"
                 src={`/${item.url}`}
@@ -31,11 +30,11 @@ function Project() {
             </div>
 
             {/* İçerik */}
-            <div className="w-full md:w-1/2 flex flex-col justify-center items-start gap-4">
+            <div className="w-full sm:w-1/2 flex flex-col justify-center items-start gap-4">
               <h1 className="text-2xl sm:text-3xl text-[#4338CA] font-inter font-bold">
                 {item.title}
               </h1>
-              <p className="text-[#383838] dark:text-[#FFFFFF] font-inter text-sm sm:text-base">
+              <p className="text-[#383838] dark:text-[#FFFFFF] font-inter text-[16px] sm:text-[13px]">
                 {item.description}
               </p>
 
@@ -55,13 +54,13 @@ function Project() {
               {/* Linkler */}
               <div className="flex gap-4 mt-4 flex-wrap">
                 <NavLink
-                  className="underline font-inter dark:text-[#FFFFFF]  font-medium text-sm"
+                  className="underline font-inter dark:text-[#FFFFFF] font-medium text-sm"
                   to="/site"
                 >
                   View Site
                 </NavLink>
                 <NavLink
-                  className="underline font-inter dark:text-[#FFFFFF]  font-medium text-sm"
+                  className="underline font-inter dark:text-[#FFFFFF] font-medium text-sm"
                   to="/github"
                 >
                   Github
