@@ -21,7 +21,7 @@ function ProfileSection() {
           <div className="flex-1 flex justify-center items-center w-full">
             <img
               className="rounded-xl w-full max-w-[250px] object-cover"
-              src="https://picsum.photos/250"
+              src="https://picsum.photos/300/291"
               alt="pr"
             />
           </div>

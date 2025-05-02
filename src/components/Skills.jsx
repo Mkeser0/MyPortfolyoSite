@@ -1,10 +1,12 @@
 import React from "react";
 import data from "../data";
+import { useSelector } from "react-redux";
 
 function Skills() {
-  const { skillSection } = data.english;
+  const currentLanguage = useSelector((state) => state.language);
 
-  // Soldaki ve sağdaki 3 skill'i ayırıyoruz
+  const { skillSection } = data[currentLanguage];
+
   const leftSkills = skillSection.slice(0, 3);
   const rightSkills = skillSection.slice(3, 6);
 

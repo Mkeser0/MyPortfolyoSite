@@ -1,11 +1,15 @@
 import React from "react";
-import useDarkMode from "../hooks/useDarkMode";
+
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { changeTheme } from "../store/actions/actions";
 
 const ToggleSwitch = () => {
-  const [darkMode, setDarkMode] = useDarkMode();
+  const dispatch = useDispatch();
+  const darkMode = useSelector((state) => state.darkMode);
 
   const toggleDark = () => {
-    setDarkMode(!darkMode);
+    dispatch(changeTheme());
   };
 
   return (
@@ -14,7 +18,7 @@ const ToggleSwitch = () => {
         type="checkbox"
         className="sr-only peer"
         checked={darkMode}
-        onChange={toggleDark}
+        onChange={() => toggleDark()}
       />
       <div
         className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700

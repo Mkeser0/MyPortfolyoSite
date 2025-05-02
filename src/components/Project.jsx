@@ -1,9 +1,13 @@
 import React from "react";
-import data from "../data.js";
+
 import { NavLink } from "react-router-dom";
+import data from "../data";
+import { useSelector } from "react-redux";
 
 function Project() {
-  const { projectSection } = data;
+  const currentLanguage = useSelector((state) => state.language);
+
+  const { projectSection } = data[currentLanguage];
 
   return (
     <div className="flex flex-col justify-center items-center bg-[#CBF281] dark:bg-[#1A210B] py-16 px-4">

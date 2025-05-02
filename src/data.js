@@ -1,16 +1,5 @@
 const data = {
-  profileSection:[
-    {title: "Doğum Tarihi", description: "15.07.1989"},
-    {title: "İkamet Şehri", description: "Antalya"},
-    {title: "Eğitim Durumu", description: "Pamukkale Üni. PDR Lisans, 2011"},
-    {title: "Tercih Ettiği Rol", description: "Frontend, UI, Backend"},
-  ],
-  projectSection: [
-    {url:"project2.png", title:"Workintech", description:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."},
-    {url:"project1.png", title:"Journey", description:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."},
-  ],
-
-    english:{
+  en:{
     heroSection: {
       greeting: "Hi!",
       name: "Mustafa",
@@ -33,46 +22,85 @@ const data = {
       ],
     },
     skillSection: [
-{name: "FİGMA", logo: "figma-log.jpg"},
-{name: "JAVASCRİPT", logo: "javaScript-logo.jpg"},
-{name: "REACT", logo: "react-logo.png"},
-{name: "NODEJS", logo: "nodejs-logo.jpg"},
-{name: "REDUX", logo: "redux-logo.png"},
-{name: "VS CODE", logo: "vStudio-logo.png"},
+      {name: "FİGMA", logo: "figma-log.jpg"},
+      {name: "JAVASCRİPT", logo: "javaScript-logo.jpg"},
+      {name: "REACT", logo: "react-logo.png"},
+      {name: "NODEJS", logo: "nodejs-logo.jpg"},
+      {name: "REDUX", logo: "redux-logo.png"},
+      {name: "VS CODE", logo: "vStudio-logo.png"},
 
     ],
-    
-
-   
-    projectsSection: {
-      title: "Projects",
-      projects: [
+    projectSection: [
+      {url:"project2.png", title:"Workintech", description:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."},
+      {url:"project1.png", title:"Journey", description:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."},
+    ],
+    aboutMe: 
+    {intro: "I completed a 900-hour Full Stack Web Development training at Workintech, gaining in-depth knowledge in both frontend and backend development.",
+    desc: "With a passion for technology, I focus on creating innovative and efficient projects. I'm a developer who values continuous growth and teamwork."}
+  ,
+    profileSection: [
+      { title: "Date of Birth", description: "15.07.1989" },
+      { title: "City of Residence", description: "Antalya" },
+      { title: "Education", description: "Pamukkale University, B.A. in Guidance and Psychological Counseling (GPC), 2011" },
+      { title: "Preferred Roles", description: "Frontend, UI, Backend" },
+    ],    
+  },
+  tr: {
+    heroSection: {
+      greeting: "Merhaba!",
+      name: "Mustafa",
+      intro: `Ben Mustafa. Full-stack Web geliştiricisiyim.`,
+      description: "Sağlam ve ölçeklenebilir frontend ürünleri geliştirebilirim. Tanışalım.",
+      profileImage: "https://via.placeholder.com/150",
+      social: [
         {
-          name: "Project 1",
-          description: "Description of Project 1",
-          link: "", // Link boş bırakılmış, gerekirse doldurun
+          logo: "https://via.placeholder.com/50",
+          name: "LinkedIn",
+          url: "https://linkedin.com",
+          altText: "LinkedIn Profili",
         },
         {
-            name: "Project 1",
-            description: "Description of Project 1",
-            link: "", // Link boş bırakılmış, gerekirse doldurun
+          logo: "https://via.placeholder.com/50",
+          name: "GitHub",
+          url: "https://github.com",
+          altText: "GitHub Profili",
         },
-        {
-            name: "Project 1",
-            description: "Description of Project 1",
-            link: "", // Link boş bırakılmış, gerekirse doldurun
-        },
-        {
-            name: "Project 1",
-            description: "Description of Project 1",
-            link: "", // Link boş bırakılmış, gerekirse doldurun
-        },{
-            name: "Project 1",
-            description: "Description of Project 1",
-            link: "", // Link boş bırakılmış, gerekirse doldurun
-        }
       ],
     },
-  }};
+    skillSection: [
+      { name: "FİGMA", logo: "figma-log.jpg" },
+      { name: "JAVASCRİPT", logo: "javaScript-logo.jpg" },
+      { name: "REACT", logo: "react-logo.png" },
+      { name: "NODEJS", logo: "nodejs-logo.jpg" },
+      { name: "REDUX", logo: "redux-logo.png" },
+      { name: "VS CODE", logo: "vStudio-logo.png" },
+    ],
+    projectSection: [
+      {
+        url: "project2.png",
+        title: "Workintech",
+        description:
+          "Kullanıcıların hangi çerezleri kabul edip hangilerini reddedeceğini seçmesini sağlayan, basit, özelleştirilebilir ve minimal kurulumlu bir çerez eklentisi. Bu araç vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, bir NPM paketi olarak mevcuttur ve Git deposu üzerinden tema ve kod özelleştirmeleri yapılabilir.",
+      },
+      {
+        url: "project1.png",
+        title: "Journey",
+        description:
+          "Kullanıcıların hangi çerezleri kabul edip hangilerini reddedeceğini seçmesini sağlayan, basit, özelleştirilebilir ve minimal kurulumlu bir çerez eklentisi. Bu araç vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, bir NPM paketi olarak mevcuttur ve Git deposu üzerinden tema ve kod özelleştirmeleri yapılabilir.",
+      },
+    ],
+    aboutMe: 
+      {intro: "Workintech'ten 900 saatlik Full Stack Web Development eğitimi aldım ve bu süreçte hem frontend hem de backend alanlarında derinlemesine bilgi sahibi oldum. ",
+      desc: "Teknolojiye olan tutkumla yaratıcı ve verimli projeler geliştirmeye odaklanıyorum. Sürekli gelişim ve takım çalışmasına değer veren bir geliştiriciyim."}
+    ,
+    profileSection: [
+      { title: "Doğum Tarihi", description: "15.07.1989" },
+      { title: "İkamet Şehri", description: "Antalya" },
+      { title: "Eğitim Durumu", description: "Pamukkale Üniversitesi, Psikolojik Danışmanlık ve Rehberlik (PDR) Lisans, 2011" },
+      { title: "Tercih Ettiği Roller", description: "Frontend, UI, Backend" },
+    ],
+  }
+  
+};
 
 export default data;

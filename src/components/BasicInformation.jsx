@@ -1,8 +1,11 @@
 import React from "react";
 import data from "../data.js";
+import { useSelector } from "react-redux";
 
 function BasicInformation() {
-  const { profileSection } = data;
+  const currentLanguage = useSelector((state) => state.language);
+
+  const { profileSection } = data[currentLanguage];
 
   return (
     <div>
