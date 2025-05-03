@@ -18,7 +18,7 @@ function Skills() {
             <img
               src={`/${skill.logo}`}
               alt={skill.name}
-              className="w-20 h-20"
+              className="w-20 h-20 rounded-[6px]"
             />
             <h2 className="text-xl md:text-2xl text-[#777777] dark:text-[#FFFFFF] font-inter">
               {skill.name}
@@ -34,7 +34,7 @@ function Skills() {
             <img
               src={`/${skill.logo}`}
               alt={skill.name}
-              className="w-20 h-20"
+              className="w-20 h-20 rounded-[6px]"
             />
             <h2 className="text-xl md:text-2xl text-[#777777] dark:text-[#FFFFFF] font-inter">
               {skill.name}

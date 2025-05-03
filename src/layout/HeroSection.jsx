@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="w-full max-w-[960px] mx-auto flex flex-col h-full">
         {/* Header with language and theme buttons */}
         <div className="absolute top-0 left-0 w-full">
-          <div className="max-w-[960px] mx-auto flex">
+          <div className="max-w-[960px] mx-auto md:mr-44 flex">
             {/* Left side for language button (at 67% mark) */}
             <div className="w-[67%] flex justify-end pr-4 p-4">
               {currentLanguage === "en" ? (
@@ -53,10 +53,11 @@ const HeroSection = () => {
         </div>
 
         {/* Name section */}
-        <div className="flex justify-start items-center w-[960px] pt-10 font-inter text-xl md:text-3xl text-[#CBF281] dark:text-[#D9D9D9]">
-          Mustafa
+        <div className="flex  justify-center items-center">
+          <div className="flex justify-start ml-44 md:ml-10 w-[960px] pt-10 font-inter text-xl md:text-3xl text-[#4731D3] md:text-[#CBF281] dark:text-[#D9D9D9]">
+            mustafa
+          </div>
         </div>
-
         {/* Main content section */}
         <div className="flex w-full my-auto flex-col md:flex-row justify-between items-center gap-6 px-8">
           <div className=" max-w-md text-left">

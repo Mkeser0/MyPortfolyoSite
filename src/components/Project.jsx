@@ -40,13 +40,13 @@ function Project() {
 
               {/* Etiketler */}
               <div className="flex flex-wrap gap-2 mt-2">
-                <span className="bg-[#4731D3] rounded-[23px] px-4 py-1 text-white text-sm">
+                <span className="bg-[#4731D3] rounded-[23px] px-4 py-1 text-white font-inter text-sm">
                   react
                 </span>
-                <span className="bg-[#4731D3] rounded-[23px] px-4 py-1 text-white text-sm">
+                <span className="bg-[#4731D3] rounded-[23px] px-4 py-1 text-white font-inter text-sm">
                   redux
                 </span>
-                <span className="bg-[#4731D3] rounded-[23px] px-4 py-1 text-white text-sm">
+                <span className="bg-[#4731D3] rounded-[23px] px-4 py-1 text-white font-inter text-sm">
                   vercel
                 </span>
               </div>
@@ -54,13 +54,13 @@ function Project() {
               {/* Linkler */}
               <div className="flex gap-4 mt-4 flex-wrap">
                 <NavLink
-                  className="underline font-inter dark:text-[#FFFFFF] font-medium text-sm"
+                  className="underline font-inter dark:text-[#CBF281] font-medium text-sm"
                   to="/site"
                 >
                   View Site
                 </NavLink>
                 <NavLink
-                  className="underline font-inter dark:text-[#FFFFFF] font-medium text-sm"
+                  className="underline font-inter dark:text-[#CBF281] font-medium text-sm"
                   to="/github"
                 >
                   Github
