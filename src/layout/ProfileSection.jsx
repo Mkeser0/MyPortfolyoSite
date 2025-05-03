@@ -1,13 +1,17 @@
 import React from "react";
 import BasicInformation from "../components/BasicInformation";
 import AboutMe from "../components/AboutMe";
+import data from "../data";
+import { useSelector } from "react-redux";
 
 function ProfileSection() {
+  const currentLanguage = useSelector((state) => state.language);
+  const { titles } = data[currentLanguage];
   return (
     <div className="bg-[#4731D3] dark:bg-[#171043] py-24 flex justify-center items-center px-4">
       <div className="flex flex-col w-full max-w-[960px]">
         <h1 className="text-3xl md:text-5xl text-[#CBF281] text-left mb-8 font-bold">
-          Profile
+          {titles.profile}
         </h1>
 
         <div className="flex flex-col md:flex-row gap-12 items-start">

@@ -6,13 +6,13 @@ import { useSelector } from "react-redux";
 function Project() {
   const currentLanguage = useSelector((state) => state.language);
 
-  const { projectSection } = data[currentLanguage];
+  const { projectSection, titles } = data[currentLanguage];
 
   return (
     <div className="flex flex-col justify-center items-center bg-[#CBF281] dark:bg-[#1A210B] py-16 px-4">
       <div className="w-full max-w-[960px]">
         <h1 className="text-4xl sm:text-5xl text-[#4731D3] mb-8 font-inter font-bold">
-          Projects
+          {titles.projects}
         </h1>
 
         {projectSection.map((item, i) => (

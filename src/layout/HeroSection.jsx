@@ -3,6 +3,8 @@ import ToggleSwitch from "../components/ToggleSwitch";
 import data from "../data";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLanguage } from "../store/actions/actions";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const HeroSection = () => {
   const dispatch = useDispatch();
@@ -77,15 +79,17 @@ const HeroSection = () => {
             <div className="flex gap-4 justify-center md:justify-start">
               <a
                 href="#"
-                className="bg-white text-black px-4 py-2 rounded shadow hover:bg-gray-100"
+                className="bg-white dark:bg-[#252128] text-[#3730A3] dark:text-[#FFFFFF] px-4 py-2 rounded shadow hover:bg-gray-100"
               >
+                <FontAwesomeIcon icon={faGithub} className="mr-2" />
                 Github
               </a>
               <a
                 href="#"
-                className="bg-white text-black px-4 py-2 rounded shadow hover:bg-gray-100"
+                className="bg-white dark:bg-[#252128] text-[#3730A3] dark:text-[#FFFFFF] px-4 py-2 rounded shadow hover:bg-gray-100"
               >
-                LinkedIn
+                <FontAwesomeIcon icon={faLinkedin} className="mr-2 " />
+                Linkedin
               </a>
             </div>
           </div>

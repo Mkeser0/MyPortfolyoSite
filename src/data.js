@@ -1,5 +1,12 @@
 const data = {
   en:{
+    titles: {
+      profile: "Profile",
+      about: "About Me",
+      skills: "Skills",
+      projects: "Projects",
+      
+    },
     footer: {
       title: "Send me a message!",
       desc1: "Got a question or proposal?",
@@ -53,6 +60,13 @@ const data = {
     ],    
   },
   tr: {
+    titles: {
+      profile: "Profil",
+      about: "Hakkımda",
+      skills: "Yetenekler",
+      projects: "Projeler",
+      
+    },
     footer: {
       title: "Bana bir mesaj gönder! ",
       desc1: "Bir sorunuz mu var, bir teklifiniz mi var?",
