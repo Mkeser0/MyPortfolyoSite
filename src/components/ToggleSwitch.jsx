@@ -1,7 +1,5 @@
 import React from "react";
-
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { changeTheme } from "../store/actions/actions";
 
 const ToggleSwitch = () => {
@@ -18,13 +16,36 @@ const ToggleSwitch = () => {
         type="checkbox"
         className="sr-only peer"
         checked={darkMode}
-        onChange={() => toggleDark()}
+        onChange={toggleDark}
       />
-      <div
-        className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
-        peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white 
-        after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 "
-      ></div>
+
+      {/* Toggle Background */}
+      <div className="w-11 h-6 bg-gray-200 dark:bg-gray-700  rounded-full hover:border-[#4731D3] relative transition-colors duration-300">
+        {/* Dış Sarı Daire */}
+        <div
+          className={`
+            absolute top-[3px] left-[2px] w-[18px] h-[18px] rounded-full 
+            transition-transform duration-300
+            ${
+              darkMode
+                ? "translate-x-0 bg-yellow-400"
+                : "translate-x-[23px] bg-yellow-400"
+            }
+          `}
+        >
+          {/* İçteki Maskelenmiş Daire */}
+          <div
+            className={`
+              absolute w-[12px] h-[12px] rounded-full
+              top-[2px] left-0
+              transition-transform duration-300
+              ${darkMode ? "translate-x-[7px] bg-gray-700" : "opacity-0"}
+            `}
+          ></div>
+        </div>
+      </div>
+
+      {/* Yazı */}
       <span className="ml-3 text-[15px] font-inter font-bold text-[#4731D3] dark:text-gray-300">
         {darkMode ? "LIGHT MODE" : "DARK MODE"}
       </span>
