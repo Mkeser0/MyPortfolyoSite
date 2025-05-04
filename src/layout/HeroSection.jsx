@@ -59,8 +59,8 @@ const HeroSection = () => {
 
         {/* Name section */}
         <div className="flex  justify-center items-center">
-          <div className="flex justify-start ml-36 md:ml-8 w-[960px] pt-10 font-inter text-xl md:text-3xl text-[#CBF281] dark:text-[#D9D9D9]">
-            mustafa
+          <div className="flex justify-start ml-24 md:ml-8 w-[960px] pt-10 font-inter text-xl md:text-3xl text-[#CBF281]">
+            Mustafa
           </div>
         </div>
         {/* Main content section */}

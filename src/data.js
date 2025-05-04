@@ -15,9 +15,9 @@ const data = {
     heroSection: {
       greeting: "Hi!",
       name: "Mustafa",
-      intro: `I'm Mustafa.`,
-      intro2: `I'm a full-stack developer.`,
-      description: "I can craft solid and scalable",
+      intro: `I'm a full-stack`,
+      intro2: ` developer...`,
+      description: "...who likes to craft solid and scalable",
       description2: "frontend products. Let's meet.",
       profileImage: "https://via.placeholder.com/150",
       social: [
@@ -75,10 +75,10 @@ const data = {
     heroSection: {
       greeting: "Merhaba!",
       name: "Mustafa",
-      intro: `Ben Mustafa.`,
-      intro2: `Full-stack Web geliştiricisiyim.`,
-      description: "Sağlam ve ölçeklenebilir",
-      description2: "frontend ürünleri geliştirebilirim. Hadi tanışalım!",
+      intro: `Full-stack Web`,
+      intro2: `geliştiricisiyim.`,
+      description: "Sağlam ve ölçeklenebilir...",
+      description2: "...frontend ürünleri geliştirebilirim. Hadi tanışalım!",
       profileImage: "https://via.placeholder.com/150",
       social: [
         {
