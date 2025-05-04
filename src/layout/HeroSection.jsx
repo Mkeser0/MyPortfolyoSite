@@ -59,7 +59,7 @@ const HeroSection = () => {
 
         {/* Name section */}
         <div className="flex  justify-center items-center">
-          <div className="flex justify-start ml-44 md:ml-10 w-[960px] pt-10 font-inter text-xl md:text-3xl text-[#4731D3] md:text-[#CBF281] dark:text-[#D9D9D9]">
+          <div className="flex justify-start ml-36 md:ml-8 w-[960px] pt-10 font-inter text-xl md:text-3xl text-[#CBF281] dark:text-[#D9D9D9]">
             mustafa
           </div>
         </div>
