@@ -14,7 +14,7 @@ function App() {
   const darkMode = useSelector((state) => state.darkMode);
 
   useEffect(() => {
-    toast.success("Merhabalar, sayfama hoş geldiniz!", {
+    toast.success("Merhaba, sayfama hoş geldiniz!", {
       position: "top-right",
       autoClose: 3000,
     });
