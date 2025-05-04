@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     toast.success("Merhaba, sayfama hoş geldiniz!", {
       position: "top-right",
-      autoClose: 3000,
+      autoClose: 2000,
     });
     axios
       .get("https://68171cf426a599ae7c395970.mockapi.io/mk/users")
@@ -29,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div data-cy="app-container" className={darkMode ? "dark" : ""}>
       <ToastContainer />
       <HeroSection />
       <SkillSection />

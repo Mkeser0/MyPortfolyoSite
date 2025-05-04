@@ -48,7 +48,10 @@ const HeroSection = () => {
               )}
             </div>
             {/* Right side for toggle switch (at 33% mark) */}
-            <div className="w-[33%] flex justify-start pl-4 p-4">
+            <div
+              data-cy="dark-mode-toggle"
+              className="w-[33%] flex justify-start pl-4 p-4"
+            >
               <ToggleSwitch />
             </div>
           </div>
@@ -63,6 +66,9 @@ const HeroSection = () => {
         {/* Main content section */}
         <div className="flex w-full my-auto flex-col md:flex-row justify-between items-center gap-6 px-8">
           <div className=" max-w-md text-left">
+            <h1 className="font-bold text-[#CBF281] text-2xl md:text-[54px] leading-snug md:leading-tight">
+              {heroSection.greeting}
+            </h1>
             <h1 className="font-bold text-[#CBF281] text-2xl md:text-[54px] leading-snug md:leading-tight">
               {heroSection.intro}
             </h1>
