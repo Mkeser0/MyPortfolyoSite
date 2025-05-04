@@ -8,9 +8,15 @@ function AboutMe() {
 
   return (
     <div>
-      <h2 className="text-4xl text-[#FFFFFF] font-inter">{titles.about}</h2>
-      <p className="text-[#FFFFFF] text-[18px] mt-4">{aboutMe.intro}</p>
-      <p className="text-[#FFFFFF] text-lg mt-4">{aboutMe.desc}</p>
+      <h2 className="text-xl md:text-2xl text-[#FFFFFF] font-inter">
+        {titles.about}
+      </h2>
+      <p className="text-[#FFFFFF] text-[14px] md:text-[16px] font-inter mt-4">
+        {aboutMe.intro}
+      </p>
+      <p className="text-[#FFFFFF] text-[14px] md:text-[16px] font-inter mt-4">
+        {aboutMe.desc}
+      </p>
     </div>
   );
 }

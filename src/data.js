@@ -55,7 +55,7 @@ const data = {
     profileSection: [
       { title: "Date of Birth", description: "15.07.1989" },
       { title: "City of Residence", description: "Antalya" },
-      { title: "Education", description: "Pamukkale University, B.A. in Guidance and Psychological Counseling (GPC), 2011" },
+      { title: "Education", description: "Pamukkale Uni., B.A. in (GPC), 2011" },
       { title: "Preferred Roles", description: "Frontend, UI, Backend" },
     ],    
   },
@@ -124,7 +124,7 @@ const data = {
     profileSection: [
       { title: "Doğum Tarihi", description: "15.07.1989" },
       { title: "İkamet Şehri", description: "Antalya" },
-      { title: "Eğitim Durumu", description: "Pamukkale Üniversitesi, Psikolojik Danışmanlık ve Rehberlik (PDR) Lisans, 2011" },
+      { title: "Eğitim Durumu", description: "Pamukkale Üni., (PDR) Lisans, 2011" },
       { title: "Tercih Ettiği Roller", description: "Frontend, UI, Backend" },
     ],
   }

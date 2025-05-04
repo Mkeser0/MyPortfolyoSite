@@ -14,10 +14,10 @@ function ProfileSection() {
           {titles.profile}
         </h1>
 
-        <div className="flex flex-col md:flex-row gap-12 items-start">
+        <div className="flex flex-col md:flex-row items-start">
           {/* Basic Info */}
-          <div className="flex-1 w-full">
-            <h2 className="text-2xl md:text-4xl text-[#FFFFFF] font-inter mb-4 text-left">
+          <div className="flex-1 ">
+            <h2 className="text-xl md:text-2xl text-[#FFFFFF] font-inter mb-4 text-left">
               Basic Information
             </h2>
             <BasicInformation />

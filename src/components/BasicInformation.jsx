@@ -10,7 +10,7 @@ function BasicInformation() {
   return (
     <div>
       {profileSection.map((item, i) => (
-        <div key={i} className="flex gap-4 py-2">
+        <div key={i} className="flex gap-4 py-1">
           <p className="text-[#CBF281] font-inter w-[101px] text-left">
             {item.title}
           </p>
