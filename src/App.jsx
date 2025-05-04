@@ -1,7 +1,8 @@
 import { useSelector } from "react-redux";
 import "./App.css";
 import Footer from "./layout/Footer";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import HeroSection from "./layout/HeroSection";
 import ProfileSection from "./layout/ProfileSection";
 import ProjectSection from "./layout/ProjectSection";
@@ -13,6 +14,10 @@ function App() {
   const darkMode = useSelector((state) => state.darkMode);
 
   useEffect(() => {
+    toast.success("Merhabalar, sayfama hoş geldiniz!", {
+      position: "top-right",
+      autoClose: 3000,
+    });
     axios
       .get("https://68171cf426a599ae7c395970.mockapi.io/mk/users")
       .then((response) => {
@@ -25,6 +30,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
+      <ToastContainer />
       <HeroSection />
       <SkillSection />
       <ProfileSection />
